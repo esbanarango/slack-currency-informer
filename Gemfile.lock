@@ -30,12 +30,19 @@ GEM
       faraday_middleware-parse_oj (~> 0.3)
       launchy (~> 2.4)
     gli (2.13.4)
+    google_currency (3.3.0)
+      money (~> 6.7)
     hashie (3.4.3)
     i18n (0.7.0)
     json (1.8.3)
     launchy (2.4.3)
       addressable (~> 2.3)
     minitest (5.8.3)
+    monetize (1.4.0)
+      money (~> 6.7)
+    money (6.7.1)
+      i18n (>= 0.6.4, <= 0.7.0)
+      sixarm_ruby_unaccent (>= 1.1.1, < 2)
     multipart-post (2.0.0)
     oj (2.14.0)
     puma (2.15.3)
@@ -62,6 +69,7 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
+    sixarm_ruby_unaccent (1.1.1)
     slack-ruby-bot (0.5.0)
       activesupport
       faye-websocket
@@ -87,14 +95,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dotenv
-  foreman
-  puma
-  rack-test
-  rake
-  rspec
-  sinatra
-  slack-ruby-bot
+  dotenv (~> 2.0.2)
+  foreman (~> 0.78.0)
+  google_currency (~> 3.3)
+  monetize (~> 1.4)
+  money (~> 6.7, >= 6.7.1)
+  puma (~> 2.15.3)
+  rack-test (~> 0.6.3)
+  rake (~> 10.4.2)
+  rspec (~> 3.4.0)
+  sinatra (~> 1.4.6)
+  slack-ruby-bot (~> 0.5.0)
 
 BUNDLED WITH
-   1.10.6
+   1.13.5

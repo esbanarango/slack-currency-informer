@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
-require 'currenry-informer'
+require 'currency-informer'
 require 'web'
 
 Thread.abort_on_exception = true
