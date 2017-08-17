@@ -1,0 +1,5 @@
+language: ruby
+before_script:
+  - bundle install
+test:
+  - bundle exec rspec spec --format documentation
