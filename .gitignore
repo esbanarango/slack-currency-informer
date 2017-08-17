@@ -1,2 +1,4 @@
 # Local script used to execute the bot with the slack token
 run.sh
+
+**/.DS_Store
